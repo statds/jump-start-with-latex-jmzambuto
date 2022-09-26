@@ -2,6 +2,9 @@
 \usepackage{amsmath}
 \usepackage[margin=1 in]{geometry}
 \usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{lipsum}
+\usepackage[colorlinks=true, citecolor=blue]{hyperref}
 
 \title{Stats Paper}
 \author{Jessica Zambuto\\
@@ -17,9 +20,16 @@ Input abstract info
 \section{Introduction}
 \label{sec:intro}
 
+\lipsum[1-3]
 
 \section{Data}
 \label{sec:data}
+\begin{equation}
+  \label{eq:mc2}
+  E= m c^2
+\end{equation}
+\lipsum{1}
+
 
 \section{Methods}
 \label{sec:meth}
@@ -36,16 +46,16 @@ f(x)=\frac{1}{\sqrt{3\pi}}\exp
 \section{Results}
 \label{sec:results}
 Table~\ref{tab:rv} summarizes some example draws from some distributions.
-
+\lipsum[1-4]
 
 \begin{table}[ht]
   \caption{This is my first table.}
   \label{tab:rv}
 \centering
 \begin{tabular}{rrr}
-  \hline
+  \toprule
 normal & poisson & gamma \\ 
-  \hline
+  \midrule
 -0.110 & 4 & 2.401 \\ 
   0.116 & 4 & 3.529 \\ 
   -0.828 & 9 & 2.112 \\ 
@@ -56,7 +66,7 @@ normal & poisson & gamma \\
   -2.617 & 8 & 3.646 \\ 
   0.747 & 1 & 5.178 \\ 
   -1.103 & 4 & 3.043 \\ 
-   \hline
+   \bottomrule
 \end{tabular}
 \end{table}
 
