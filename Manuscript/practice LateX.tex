@@ -3,6 +3,7 @@
 \usepackage[margin=1 in]{geometry}
 \usepackage{graphicx}
 \usepackage{booktabs}
+\usepackage{natbib}
 \usepackage{lipsum}
 \usepackage[colorlinks=true, citecolor=blue]{hyperref}
 
@@ -21,6 +22,11 @@ Input abstract info
 \label{sec:intro}
 
 \lipsum[1-3]
+To cite a reference, here are examples.
+\citet{xie2015dynamic} did something ... \lipsum[1]
+
+A lot of work has been done \citep[e.g.,][]{xie2015dynamic}.
+\lipsum[2]
 
 \section{Data}
 \label{sec:data}
@@ -81,6 +87,9 @@ Figure~\ref{fig:cars} shows the distance against the speed from this dataset.
 
 \section{Discussion}
 \label{sec:disc}
+
+\bibliography{refs}
+\bibliographystyle{chicago}
 
 \end{document}
 
